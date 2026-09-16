@@ -1,32 +1,490 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+
+}
+
+
 body{
-    background-color: #f0f0f0;
-    font-family: Arial, Helvetica, sans-serif;
+
+    background:#eef5e9;
+
+    color:#23402d;
+
 }
 
-h1{
-    text-align: center;
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+header{
+
+    min-height:95px;
+
+    background:#f7f3f3;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:15px 5%;
+
+    gap:20px;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.12);
+
 }
 
-form{
-    width: 300px;
-    margin: auto;
+
+.logo img{
+
+    width:115px;
+
 }
 
-fieldset{
-    background-color: white;
-    padding: 20px;
+
+.nome-site{
+
+    border-left:2px solid #2fdf3d;
+
+    padding-left:20px;
+
 }
 
-p{
-    margin-bottom: 15px;
+
+.nome-site h1{
+
+    color:#006b3f;
+
+    font-size:30px;
+
 }
 
-input{
-    width: 100%;
-    padding: 5px;
+
+.nome-site p{
+
+    color:#637268;
+
+    margin-top:5px;
+
 }
 
-button{
-    padding: 5px 10px;
-    margin-top: 10px;
+
+nav{
+
+    margin-left:auto;
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+
+nav{
+
+    margin-left:auto;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:#31513b;
+
+    font-weight:600;
+
+    padding:12px 24px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    background:#006b3f;
+
+    color:white;
+
+}
+
+
+nav a:hover{
+
+    color:#f2f5f3;
+
+}
+
+
+/* ==============================
+   ÁREA PRINCIPAL
+============================== */
+
+.principal{
+
+    min-height:650px;
+
+    padding:70px 6%;
+
+    background:
+
+        linear-gradient(
+            rgba(220,239,203,.82),
+            rgba(202,230,180,.88)
+        ),
+
+        url("../dados/img/fundo.avif");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+/* ==============================
+   TEXTO
+============================== */
+
+.texto{
+
+    max-width:700px;
+
+    margin:0 auto 45px;
+
+    text-align:center;
+
+}
+
+
+.texto h2{
+
+    color:#31513b;
+
+    font-size:32px;
+
+    font-weight:600;
+
+}
+
+
+.texto h1{
+
+    color:#006b3f;
+
+    font-size:52px;
+
+    margin:5px 0 15px;
+
+}
+
+
+.texto p{
+
+    color:#4f6255;
+
+    font-size:18px;
+
+    line-height:28px;
+
+}
+
+
+/* ==============================
+   CARDS DE LOGIN
+============================== */
+
+.acessos{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.login-card{
+
+    width:360px;
+
+    min-height:350px;
+
+    background:rgba(255,255,255,.88);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(43,73,48,.20);
+
+    border:1px solid rgba(255,255,255,.9);
+
+    transition:.3s;
+
+}
+
+
+.login-card:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:0 18px 35px rgba(43,73,48,.25);
+
+}
+
+
+/* ==============================
+   ÍCONES
+============================== */
+
+.icone{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#e1efda;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:42px;
+
+}
+
+
+/* ==============================
+   TEXTO DOS CARDS
+============================== */
+
+.login-card h2{
+
+    color:#006b3f;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+.login-card p{
+
+    color:#637268;
+
+    line-height:26px;
+
+    min-height:75px;
+
+    margin-bottom:25px;
+
+}
+
+
+/* ==============================
+   BOTÃO
+============================== */
+
+.botao{
+
+    display:inline-block;
+
+    min-width:150px;
+
+    padding:13px 35px;
+
+    background:#006b3f;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.botao:hover{
+
+    background:#004d2c;
+
+    transform:scale(1.04);
+
+}
+
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+footer{
+
+    background:#003b23;
+
+    color:white;
+
+    padding:40px 7% 20px;
+
+}
+
+
+.footer-conteudo{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.footer-conteudo div{
+
+    max-width:300px;
+
+}
+
+
+.footer-conteudo h3{
+
+    color:#a9d68c;
+
+    margin-bottom:12px;
+
+    font-size:20px;
+
+}
+
+
+.footer-conteudo p{
+
+    color:#d8e8dc;
+
+    line-height:25px;
+
+}
+
+
+.footer-final{
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+    margin-top:30px;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    color:#c9ddd0;
+
+    font-size:14px;
+
+}
+
+
+/* ==============================
+   RESPONSIVO
+============================== */
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+    .nome-site{
+
+        border-left:none;
+
+        border-top:1px solid #dce8dd;
+
+        padding-left:0;
+
+        padding-top:10px;
+
+    }
+
+
+    nav{
+
+        margin-left:0;
+
+        gap:20px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+
+    .texto h1{
+
+        font-size:40px;
+
+    }
+
+
+    .texto h2{
+
+        font-size:26px;
+
+    }
+
+
+    .login-card{
+
+        width:100%;
+
+        max-width:360px;
+
+    }
+
 }

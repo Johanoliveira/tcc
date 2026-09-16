@@ -1,0 +1,345 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Segoe UI', sans-serif;
+
+}
+
+
+body{
+
+    background:#f4f8f2;
+
+    color:#33443a;
+
+}
+
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+header{
+
+    min-height:95px;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:15px 5%;
+
+    gap:20px;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.10);
+
+}
+
+
+.logo img{
+
+    width:115px;
+
+}
+
+
+.titulo{
+
+    border-left:2px solid #dce8dd;
+
+    padding-left:20px;
+
+}
+
+
+.titulo h1{
+
+    color:#006b3f;
+
+    font-size:30px;
+
+}
+
+
+.titulo p{
+
+    color:#637268;
+
+    margin-top:5px;
+
+}
+
+
+nav{
+
+    margin-left:auto;
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:#31513b;
+
+    font-weight:600;
+
+    padding:12px 24px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    background:#006b3f;
+
+    color:white;
+
+}
+
+
+nav a:hover{
+
+    color:#e8eeec;
+
+}
+
+
+/* ==============================
+   TOPO
+============================== */
+
+.topo{
+
+    background:
+
+        linear-gradient(
+            rgba(220,239,203,.90),
+            rgba(202,230,180,.92)
+        ),
+
+        url("../dados/img/fundo.avif");
+
+    background-size:cover;
+
+    background-position:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+
+.topo h1{
+
+    color:#006b3f;
+
+    font-size:48px;
+
+    margin-bottom:18px;
+
+}
+
+
+.topo p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#4f6255;
+
+    font-size:19px;
+
+    line-height:30px;
+
+}
+
+
+/* ==============================
+   CONTEÚDO
+============================== */
+
+.conteudo{
+
+    max-width:900px;
+
+    margin:60px auto;
+
+    padding:0 25px;
+
+}
+
+
+.etapa{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:25px;
+
+    background:white;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    border-left:5px solid #006b3f;
+
+}
+
+
+.numero{
+
+    min-width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#e1efda;
+
+    color:#006b3f;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+
+.etapa h2{
+
+    color:#006b3f;
+
+    margin-bottom:10px;
+
+}
+
+
+.etapa p{
+
+    color:#637268;
+
+    line-height:27px;
+
+}
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+footer{
+
+    background:#003b23;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px 20px;
+
+}
+
+
+footer h3{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+
+footer p{
+
+    margin:7px;
+
+    color:#d8e8dc;
+
+}
+
+
+/* ==============================
+   RESPONSIVO
+============================== */
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+    .titulo{
+
+        border-left:none;
+
+        border-top:1px solid #dce8dd;
+
+        padding-left:0;
+
+        padding-top:10px;
+
+    }
+
+
+    nav{
+
+        margin-left:0;
+
+        gap:20px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+
+    .topo h1{
+
+        font-size:38px;
+
+    }
+
+
+    .etapa{
+
+        flex-direction:column;
+
+    }
+
+}
