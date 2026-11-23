@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #cbeab4, #e8eeea);
+    min-height: 100vh;
+    color: #b4b0b0;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    height: 90px;
+    background: rgb(240, 237, 237);
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom: 1px solid #e9e7e7;
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+}
+
+.titulo {
+    margin-left: 20px;
+}
+
+.titulo h1 {
+    color: #088144;
+    font-size: 25px;
+    margin-bottom: 4px;
+}
+
+.titulo p {
+    color: #7b7a7a;
+    font-size: 14px;
+}
+
+header nav {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+nav{
+    margin-left:auto;
+    display:flex;
+    gap:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#12662d;
+    font-weight:600;
+    padding:12px 24px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#047646;
+    color:rgb(249, 247, 247);
+}
+
+
+
+
+/* =========================
+   ÁREA PRINCIPAL
+========================= */
+
+main {
+    min-height: calc(100vh - 170px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+
+/* =========================
+   CARD DE CADASTRO
+========================= */
+
+.cadastro-equipe {
+    width: 100%;
+    max-width: 560px;
+    background: rgb(241, 238, 238);
+    border-radius: 22px;
+    padding: 40px;
+    box-shadow: 0 12px 35px rgba(0, 80, 45, 0.10);
+    border: 1px solid #ade3c8;
+}
+
+
+/* =========================
+   CABEÇALHO DO CADASTRO
+========================= */
+
+.cabecalho-cadastro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icone-equipe {
+    width: 70px;
+    height: 70px;
+    background: #a3db84;
+    color: #006b3f;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 31px;
+}
+
+.cabecalho-cadastro span {
+    display: inline-block;
+    color: #00804a;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.cabecalho-cadastro h1 {
+    color: #006b3f;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.cabecalho-cadastro p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.campo {
+    margin-bottom: 19px;
+}
+
+.campo label {
+    display: block;
+    color: #444;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #d5ded9;
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+    background: #fcfdfc;
+}
+
+.campo input:focus {
+    border-color: #00804a;
+    box-shadow: 0 0 0 3px rgba(0, 128, 74, 0.08);
+    background: white;
+}
+
+.campo small {
+    display: block;
+    margin-top: 7px;
+    color: #8a8a8a;
+    font-size: 11px;
+}
+
+
+/* =========================
+   AVISO DE SEGURANÇA
+========================= */
+
+.aviso-seguranca {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+
+    background: #f0f8f3;
+    border: 1px solid #d8ebdf;
+    border-radius: 12px;
+
+    padding: 15px;
+    margin: 7px 0 22px;
+}
+
+.icone-aviso {
+    width: 38px;
+    height: 38px;
+    background: white;
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.aviso-seguranca strong {
+    display: block;
+    color: #006b3f;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.aviso-seguranca p {
+    color: #66736b;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+button {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #006b3f;
+    color: rgb(251, 248, 248);
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #005432;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   INFORMAÇÃO
+========================= */
+
+.informacao-cadastro {
+    text-align: center;
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #edf0ee;
+}
+
+.informacao-cadastro p {
+    color: #888;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background: #006b3f;
+    color: white;
+
+    padding: 23px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer span {
+    font-size: 11px;
+    text-align: right;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 750px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .cadastro-equipe {
+        padding: 30px 22px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    footer span {
+        text-align: center;
+    }
+
+}

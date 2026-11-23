@@ -13,7 +13,7 @@
 
 body{
 
-    background:#eef5e9;
+    background:#f0f4ee;
 
     color:#23402d;
 
@@ -45,7 +45,7 @@ header{
 
 .logo img{
 
-    width:115px;
+    width:140px;
 
 }
 
@@ -324,7 +324,7 @@ nav a:hover{
 
     background:#006b3f;
 
-    color:white;
+    color:rgb(245, 244, 244);
 
     text-decoration:none;
 
@@ -443,7 +443,7 @@ footer{
 
         border-left:none;
 
-        border-top:1px solid #dce8dd;
+        border-top:1px solid #ebf0eb;
 
         padding-left:0;
 

@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e1f9ca;
+    color: #304338;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    width: 100%;
+    height: 85px;
+    background: rgb(248, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 55px;
+    border-bottom: 1px solid #bddbb3;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area img {
+    width: 125px;
+    height: auto;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo strong {
+    font-size: 19px;
+    color: #006b3f;
+}
+
+.titulo span {
+    font-size: 13px;
+    color: #718071;
+    margin-top: 3px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #536257;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 11px 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #edf6e9;
+    color: #006b3f;
+}
+
+nav a.sair {
+    color: #9b5555;
+}
+
+nav a.sair:hover {
+    background: #f9eded;
+    color: #8c3838;
+}
+
+
+/* =========================
+   PRINCIPAL
+========================= */
+
+main {
+    min-height: calc(100vh - 170px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 20px;
+}
+
+.confirmacao {
+    width: 100%;
+    max-width: 700px;
+    background: rgb(246, 241, 241);
+    border-radius: 28px;
+    padding: 55px 60px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(44, 95, 59, 0.12);
+    border: 1px solid #c8e7c0;
+}
+
+
+/* =========================
+   ÍCONE
+========================= */
+
+.icone-confirmacao {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    background: #e8f6e3;
+    color: #19834d;
+    border: 8px solid #f3faef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   TEXTOS
+========================= */
+
+.etiqueta {
+    display: block;
+    color: #4d9060;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.confirmacao h1 {
+    font-size: 32px;
+    color: #304a37;
+    margin-bottom: 15px;
+}
+
+.confirmacao > p {
+    color: #617066;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.confirmacao .mensagem {
+    max-width: 540px;
+    margin: 12px auto 0;
+    font-size: 14px;
+    color: #7a877d;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 32px;
+}
+
+.botao {
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao.principal {
+    background: #006b3f;
+    color: white;
+}
+
+.botao.principal:hover {
+    background: #005631;
+    transform: translateY(-2px);
+}
+
+.botao.secundario {
+    background: #eef5eb;
+    color: #39724a;
+}
+
+.botao.secundario:hover {
+    background: #e2efdf;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.rodape-confirmacao {
+    margin-top: 35px;
+    padding-top: 22px;
+    border-top: 1px solid #e8eee6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.rodape-confirmacao span {
+    font-size: 17px;
+}
+
+.rodape-confirmacao p {
+    font-size: 13px;
+    color: #7a877d;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    min-height: 85px;
+    background: white;
+    border-top: 1px solid #e2ebdf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+}
+
+footer strong {
+    color: #006b3f;
+    font-size: 14px;
+}
+
+footer span {
+    color: #7a877d;
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .confirmacao {
+        padding: 40px 25px;
+    }
+
+    .confirmacao h1 {
+        font-size: 27px;
+    }
+
+    .opcoes {
+        flex-direction: column;
+    }
+
+    .botao {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro do Aluno - Form Empático</title>
+
+    <link rel="stylesheet" href="../css/cadaluno.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+
+        <img src="../img/if.png" alt="Logo Instituto Federal">
+
+    </div>
+
+
+    <div class="titulo">
+
+        <h1>Form Empático</h1>
+
+        <p>
+            Acompanhamento e Apoio Sociopedagógico
+        </p>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+    <section class="cadastro-aluno">
+
+
+        <div class="cabecalho-cadastro">
+
+            <div class="icone-cadastro">
+                🎓
+            </div>
+
+
+            <span>
+                PRIMEIRO ACESSO
+            </span>
+
+
+            <h1>
+                Cadastro do Aluno
+            </h1>
+
+
+            <p>
+                Preencha seus dados para criar seu acesso
+                ao Form Empático.
+            </p>
+
+        </div>
+
+
+
+        <form action="" method="post">
+
+
+            <!-- NOME -->
+
+            <div class="campo">
+
+                <label for="nome">
+                    Nome completo
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome completo"
+                    autocomplete="name"
+                    required>
+
+            </div>
+
+
+
+            <!-- BI -->
+
+            <div class="campo">
+
+                <label for="bi">
+                    BI
+                </label>
+
+                <input
+                    type="text"
+                    id="bi"
+                    name="bi"
+                    placeholder="Digite seu BI"
+                    required>
+
+            </div>
+
+
+
+            <!-- SÉRIE -->
+
+            <div class="campo">
+
+                <label for="serie">
+                    Série do Ensino Médio
+                </label>
+
+                <select
+                    id="serie"
+                    name="serie"
+                    required>
+
+                    <option value="">
+                        Selecione sua série
+                    </option>
+
+                    <option value="1">
+                        1º ano do Ensino Médio
+                    </option>
+
+                    <option value="2">
+                        2º ano do Ensino Médio
+                    </option>
+
+                    <option value="3">
+                        3º ano do Ensino Médio
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- CURSO -->
+
+<div class="campo">
+
+    <div class="campo">
+    <label for="curso">Curso</label>
+    <select id="curso" name="curso" required>
+        <option value="">Selecione seu curso</option>
+        <option value="tecnico-informatica">Técnico em Informática</option>
+        <option value="administracao">Administração</option>
+    </select>
+    
+</div>
+
+</div>
+
+
+
+            <!-- E-MAIL -->
+
+            <div class="campo">
+
+                <label for="email">
+                    E-mail institucional
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seu.email@instituto.edu.br"
+                    autocomplete="email"
+                    required>
+
+                <small>
+                    Utilize seu e-mail institucional.
+                </small>
+
+            </div>
+
+
+
+            <!-- SENHA -->
+
+            <div class="campo">
+
+                <label for="senha">
+                    Criar senha
+                </label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Crie uma senha de 6 caracteres"
+                    minlength="6"
+                    maxlength="6"
+                    pattern="(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$!]).{6}"
+                    title="A senha deve ter exatamente 6 caracteres, contendo pelo menos uma letra maiúscula, um número e um caractere especial."
+                    autocomplete="new-password"
+                    required>
+
+
+                <div class="regras-senha">
+
+                    <strong>
+                        Sua senha deve conter:
+                    </strong>
+
+                    <p>
+                        • Exatamente 6 caracteres
+                    </p>
+
+                    <p>
+                        • Pelo menos uma letra maiúscula
+                    </p>
+
+                    <p>
+                        • Pelo menos um número
+                    </p>
+
+                    <p>
+                        • Pelo menos um caractere especial:
+                        @ # ! $
+                    </p>
+
+                    <span>
+                        Exemplos: Abc1@2 ou Tcc2#A
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CONFIRMAR SENHA -->
+
+            <div class="campo">
+
+                <label for="confirmar_senha">
+                    Confirmar senha
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmar_senha"
+                    name="confirmar_senha"
+                    placeholder="Digite a senha novamente"
+                    minlength="6"
+                    maxlength="6"
+                    autocomplete="new-password"
+                    required>
+
+            </div>
+
+
+
+            <!-- AVISO -->
+
+            <div class="aviso">
+
+                <div class="icone-aviso">
+                    🔒
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Seus dados estarão protegidos
+                    </strong>
+
+                    <p>
+                        Seus dados serão utilizados para
+                        identificar seu acesso ao Form Empático.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BOTÃO -->
+
+            <button type="submit">
+                Criar meu cadastro
+            </button>
+
+
+        </form>
+
+
+
+        <div class="voltar">
+
+            <p>
+                Já possui cadastro?
+            </p>
+
+            <a href="aluno.html">
+                Voltar para o acesso
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        Instituto Federal de Educação, Ciência e Tecnologia
+    </p>
+
+
+    <span>
+        Juntos pelo bem-estar<br>
+        dos nossos estudantes
+    </span>
+
+</footer>
+
+
+</body>
+
+</html>

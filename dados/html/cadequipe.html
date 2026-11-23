@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro da Equipe - Form Empático</title>
+
+    <link rel="stylesheet" href="../css/cadequipe.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="../img/if.png" alt="Logo Instituto Federal">
+    </div>
+
+    <div class="titulo">
+        <h1>Form Empático</h1>
+        <p>Acompanhamento e Apoio Sociopedagógico</p>
+    </div>
+
+    <nav>
+        <a href="../index.html">Início</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="cadastro-equipe">
+
+        <div class="cabecalho-cadastro">
+
+            <div class="icone-equipe">
+                👩‍🏫
+            </div>
+
+            <span>CADASTRO RESTRITO</span>
+
+            <h1>Cadastro da Equipe Sociopedagógica</h1>
+
+            <p>
+                Cadastre os integrantes autorizados a acessar
+                a área sociopedagógica do Form Empático.
+            </p>
+
+        </div>
+
+
+        <form action="#" method="post">
+
+
+            <div class="campo">
+
+                <label for="nome">
+                    Nome completo
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite o nome completo"
+                    required>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="cargo">
+                    Cargo
+                </label>
+
+                <input
+                    type="text"
+                    id="cargo"
+                    name="cargo"
+                    placeholder="Digite o cargo"
+                    required>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="usuario">
+                    Usuário
+                </label>
+
+                <input
+                    type="text"
+                    id="usuario"
+                    name="usuario"
+                    placeholder="Crie um usuário exclusivo"
+                    autocomplete="username"
+                    required>
+
+                <small>
+                    O usuário será utilizado para entrar na área da equipe.
+                </small>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="senha">
+                    Senha
+                </label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Crie uma senha de 6 caracteres"
+                    maxlength="6"
+                    minlength="6"
+                    autocomplete="new-password"
+                    required>
+
+                <small>
+                    A senha deve possuir exatamente 6 caracteres.
+                </small>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="confirmar_senha">
+                    Confirmar senha
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmar_senha"
+                    name="confirmar_senha"
+                    placeholder="Digite a senha novamente"
+                    maxlength="6"
+                    minlength="6"
+                    autocomplete="new-password"
+                    required>
+
+            </div>
+
+
+            <div class="aviso-seguranca">
+
+                <div class="icone-aviso">
+                    🔒
+                </div>
+
+                <div>
+
+                    <strong>Cadastro de acesso restrito</strong>
+
+                    <p>
+                        Somente integrantes autorizados da equipe
+                        sociopedagógica devem possuir uma conta
+                        para acessar o sistema.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button type="submit">
+                Cadastrar integrante
+            </button>
+
+
+        </form>
+
+
+        <div class="informacao-cadastro">
+
+            <p>
+                O cadastro dos integrantes será utilizado para
+                controlar o acesso à área da equipe.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        Instituto Federal de Educação, Ciência e Tecnologia
+    </p>
+
+    <span>
+        Juntos pelo bem-estar<br>
+        dos nossos estudantes
+    </span>
+
+</footer>
+
+</body>
+
+</html>
